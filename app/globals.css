@@ -2,25 +2,88 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #18181b; /* zinc-900 */
 }
 
-@theme inline {
+.dark {
+  --background: #09090b; /* zinc-950 */
+  --foreground: #f4f4f5; /* zinc-100 */
+}
+
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  
+  --color-canvas-50: #fafafa;
+  --color-canvas-100: #ffffff;
+  
+  /* Redefining navyslate to a premium zinc/charcoal palette */
+  --color-navyslate-50: #fafafa;
+  --color-navyslate-100: #f4f4f5;
+  --color-navyslate-200: #e4e4e7;
+  --color-navyslate-300: #d4d4d8;
+  --color-navyslate-400: #a1a1aa;
+  --color-navyslate-500: #71717a;
+  --color-navyslate-600: #52525b;
+  --color-navyslate-700: #3f3f46;
+  --color-navyslate-800: #27272a;
+  --color-navyslate-900: #18181b;
+  --color-navyslate-950: #09090b;
+  
+  /* Redefining trustcyan to a modern premium teal */
+  --color-trustcyan-50: #f0fdfa;
+  --color-trustcyan-100: #ccfbf1;
+  --color-trustcyan-200: #99f6e4;
+  --color-trustcyan-300: #5eead4;
+  --color-trustcyan-400: #2dd4bf;
+  --color-trustcyan-500: #14b8a6;
+  --color-trustcyan-600: #0d9488;
+  --color-trustcyan-700: #0f766e;
+  --color-trustcyan-800: #115e59;
+  --color-trustcyan-900: #134e4a;
+  --color-trustcyan-950: #042f2e;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
+  --animate-gradient: gradient-shift 15s ease infinite;
+  --animate-blob: blob 7s infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@custom-variant dark (&:is(.dark *));
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ocultar barra superior de Google Translate */
+body {
+  top: 0 !important;
+}
+.skiptranslate iframe {
+  display: none !important;
 }
