@@ -1,13 +1,8 @@
 import Image from "next/image";
-import AnimatedBackground from "./AnimatedBackground";
 
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden py-16 md:py-24 transition-colors duration-300">
-      
-      {/* Dynamic Animated Background */}
-      <AnimatedBackground />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           

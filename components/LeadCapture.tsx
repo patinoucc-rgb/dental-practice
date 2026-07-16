@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function LeadCapture() {
   return (
-    <section className="w-full py-20 bg-canvas-50 dark:bg-navyslate-900 transition-colors duration-300">
+    <section className="w-full py-20 bg-canvas-50/80 dark:bg-navyslate-900/80 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
