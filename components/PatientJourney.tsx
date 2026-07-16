@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 export default function PatientJourney() {
   const steps = [
     { number: "01", title: "Schedule Consultation", desc: "Book your visit online or call our front desk. We offer flexible scheduling, including same-day appointments." },
@@ -10,8 +12,9 @@ export default function PatientJourney() {
     <section id="journey" className="w-full py-24 bg-canvas-50 dark:bg-navyslate-900 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navyslate-900 dark:text-white mb-4">
-            Your Journey to a <span className="text-trustcyan-500">Perfect Smile</span>
+          <SectionEyebrow>How It Works</SectionEyebrow>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-navyslate-900 dark:text-white mb-4 tracking-tight text-balance">
+            Your Journey to a <span className="italic text-trustcyan-500">Perfect Smile</span>
           </h2>
           <p className="text-lg text-navyslate-600 dark:text-navyslate-300">
             A seamless, stress-free process designed around your comfort.
@@ -29,7 +32,7 @@ export default function PatientJourney() {
                 }`}
               >
                 <div className="flex-shrink-0 w-16 h-16 rounded-full bg-trustcyan-50 dark:bg-navyslate-900 border-2 border-trustcyan-100 dark:border-trustcyan-900 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-trustcyan-600 dark:text-trustcyan-400">{step.number}</span>
+                  <span className="font-display text-2xl font-semibold text-trustcyan-600 dark:text-trustcyan-400">{step.number}</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-navyslate-900 dark:text-white mb-2">{step.title}</h3>

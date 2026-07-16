@@ -19,8 +19,8 @@ export default function LeadCapture() {
             <div className="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-trustcyan-500 rounded-full blur-[80px] opacity-50 pointer-events-none"></div>
             
             <div className="relative z-10 text-white">
-              <h3 className="text-2xl md:text-3xl font-extrabold mb-4">
-                Don't let dental anxiety hold you back.
+              <h3 className="font-display text-3xl md:text-4xl font-semibold mb-4 leading-tight text-balance">
+                Don&apos;t let dental anxiety hold you back.
               </h3>
               <p className="text-trustcyan-100 mb-8">
                 Download our free guide on "Pain-Free Modern Dentistry" or book your no-pressure consultation today. We listen before we treat.

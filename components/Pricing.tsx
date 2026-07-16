@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import SectionEyebrow from "./SectionEyebrow";
 
 export default function Pricing() {
   const plans = [
@@ -55,8 +56,9 @@ export default function Pricing() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navyslate-900 dark:text-white mb-4">
-            Transparent, <span className="text-trustcyan-500">Accessible Care</span>
+          <SectionEyebrow>Membership & Plans</SectionEyebrow>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-navyslate-900 dark:text-white mb-4 tracking-tight text-balance">
+            Transparent, <span className="italic text-trustcyan-500">Accessible Care</span>
           </h2>
           <p className="text-lg text-navyslate-600 dark:text-navyslate-300">
             Premium dentistry shouldn't break the bank. Choose the plan that works best for your smile.
@@ -87,7 +89,7 @@ export default function Pricing() {
               <p className="text-sm text-navyslate-500 dark:text-navyslate-400 mb-6 min-h-[40px]">{plan.desc}</p>
               
               <div className="mb-6 flex items-baseline">
-                <span className="text-5xl font-extrabold text-navyslate-900 dark:text-white">{plan.price}</span>
+                <span className="font-display text-5xl font-semibold text-navyslate-900 dark:text-white">{plan.price}</span>
                 <span className="text-navyslate-500 ml-1">{plan.period}</span>
               </div>
               

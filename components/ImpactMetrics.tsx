@@ -17,7 +17,7 @@ export default function ImpactMetrics() {
           {metrics.map((metric, idx) => (
             <div key={idx} className="flex flex-col">
               <dt className="text-base text-navyslate-300 font-medium order-2 mt-2">{metric.label}</dt>
-              <dd className="text-4xl md:text-5xl font-extrabold text-white tracking-tight order-1">
+              <dd className="font-display text-5xl md:text-6xl font-semibold text-white tracking-tight order-1">
                 {metric.value}
               </dd>
             </div>
