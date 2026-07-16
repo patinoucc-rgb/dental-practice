@@ -14,7 +14,10 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  
+  --font-serif: var(--font-fraunces);
+
+  --radius: 1rem;
+
   --color-canvas-50: #fafafa;
   --color-canvas-100: #ffffff;
   
@@ -78,6 +81,19 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* Elegant display headings */
+@utility font-display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+/* Subtle dotted grid backdrop for sections */
+@utility bg-dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
 /* Ocultar barra superior de Google Translate */

@@ -13,7 +13,7 @@ export default function ServiceHighlight() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
       >
-        <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+        <h2 className="font-display text-4xl md:text-6xl font-semibold text-white mb-6 leading-[1.05] tracking-tight text-balance">
           Ready to transform your smile?
         </h2>
         <p className="text-trustcyan-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto">

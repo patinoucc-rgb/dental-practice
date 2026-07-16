@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SectionEyebrow from "./SectionEyebrow";
 
 export default function BlogSection() {
   const posts = [
@@ -17,7 +18,8 @@ export default function BlogSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navyslate-900 dark:text-white mb-4">Patient <span className="text-trustcyan-500">Resources</span></h2>
+            <SectionEyebrow centered={false}>From The Blog</SectionEyebrow>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-navyslate-900 dark:text-white mb-4 tracking-tight text-balance">Patient <span className="italic text-trustcyan-500">Resources</span></h2>
             <p className="text-lg text-navyslate-600 dark:text-navyslate-300">Educational articles to help you maintain a healthy smile.</p>
           </div>
           <Link href="/blog" className="text-trustcyan-500 font-semibold hover:text-trustcyan-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-trustcyan-500 rounded-md p-1">
