@@ -3,6 +3,7 @@ import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/ThemeProvider";
 import GoogleTranslate from "../components/GoogleTranslate";
+import GlobalBackground from "../components/GlobalBackground";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${fraunces.variable} h-full antialiased bg-canvas-100 dark:bg-navyslate-950`} suppressHydrationWarning>      
       <body className="min-h-full flex flex-col bg-canvas-100 text-navyslate-900 dark:bg-navyslate-950 dark:text-navyslate-100 transition-colors duration-300">
         <ThemeProvider>
+          <GlobalBackground />
           <GoogleTranslate />
           {children}
         </ThemeProvider>

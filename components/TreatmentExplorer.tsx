@@ -33,7 +33,7 @@ export default function TreatmentExplorer() {
   };
 
   return (
-    <section id="treatments" className="w-full py-24 bg-white dark:bg-navyslate-950 transition-colors duration-300">
+    <section id="treatments" className="w-full py-24 bg-white/80 dark:bg-navyslate-950/80 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <SectionEyebrow>Our Services</SectionEyebrow>
